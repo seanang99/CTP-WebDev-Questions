@@ -1,5 +1,5 @@
 /**
- * Topic: Array, Functions
+ * Topic: Arrays, Functions
  * Challenge: Medium
  * Question 8
  */
