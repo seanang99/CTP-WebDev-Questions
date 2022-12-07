@@ -1,5 +1,5 @@
 /**
- * Topic: Array, Loop, Math
+ * Topic: Arrays, Loops, Math
  * Challenge: Medium
  * Question 9
  */
