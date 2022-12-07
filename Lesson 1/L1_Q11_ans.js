@@ -14,3 +14,9 @@
 
 console.log(reverse("sailor"));
 console.log(reverse("racecar"));
+
+/**
+ * Final Answer:
+ * - sailor -> rolias
+ * - racecar -> racecar 
+ */

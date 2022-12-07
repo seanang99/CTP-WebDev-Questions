@@ -26,4 +26,10 @@ function leapYearRange(start, end) {
   return leapYears;
 }
 
-console.log(leapYearRange(2000, 2022)); // [ 2000, 2004, 2008, 2012, 2016, 2020 ]
+console.log(leapYearRange(2000, 2022));
+
+/**
+ * Final Answer:
+ * [ 2000, 2004, 2008, 2012, 2016, 2020 ]
+ * There are 6 leap years between 2000 and 2022.
+ */

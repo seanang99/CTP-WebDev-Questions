@@ -12,3 +12,9 @@ university = "NTU";
 
 console.log(university); // NTU
 console.log(cca); // The Navigators
+
+/**
+ * Final Answer:
+ * NTU
+ * The Navigators
+ */

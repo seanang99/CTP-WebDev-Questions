@@ -17,3 +17,15 @@ for (let i = 0; i < height; i++) {
 }
 
 console.log(result);
+
+/**
+ * Final Answer:
+
+ #
+ ###
+ #####
+ #######
+ #########
+ ###########
+ 
+ */
