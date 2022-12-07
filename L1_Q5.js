@@ -1,23 +1,19 @@
 /**
- * Topic: Object
- * Challenge: Easy
+ * Topic: Loops
+ * Challenge: Medium
  * Question 5
  */
-class Cylinder {
-  constructor(c_height, c_diameter) {
-    this.c_height = c_height;
-    this.c_diameter = c_diameter;
-  }
 
-  get volume() {
-    return this.calcVolume;
-  }
+let height = 6;
+let counter = 1;
+let result = "";
 
-  calcVolume() {
-    const radius = this.c_diameter / 2;
-    return this.c_height * Math.PI * radius ** 2;
+for (let i = 0; i < height; i++) {
+  for (let j = 0; j < counter; j++) {
+    result = result + "#";
   }
+  counter = counter + 2;
+  result = result + "\n";
 }
 
-let cylc = new Cylinder(7, 4);
-console.log('Volume = ', cylc.volume().toFixed(3));
+console.log(result);
