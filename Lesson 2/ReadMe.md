@@ -52,8 +52,8 @@ Here are some possible projects that you would like to do:
 1. Create a page that uses parallex scrolling
 - Parallex scroling is a web trend where the background content (i.e. image) is moved at a different speed than the foreground content while scrolling. 
 
-*Ref: *https://www.w3schools.com/howto/howto_css_parallax.asp
+*Ref:*https://www.w3schools.com/howto/howto_css_parallax.asp
 
 2. BMI Calculator
 
-*Ref: *https://github.com/sahandghavidel/HTML-CSS-JavaScript-projects-for-beginners/tree/main/projects/bmi-calculator
+*Ref:*https://github.com/sahandghavidel/HTML-CSS-JavaScript-projects-for-beginners/tree/main/projects/bmi-calculator
