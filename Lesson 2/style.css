@@ -1,60 +1,100 @@
 body {
-    color: #222222;
-    font-size: 1em;
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  color: #222222;
+  font-size: 1em;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+section {
+  max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+
+section>h1 {
+  margin-top: 2em;
+}
+
+h2 {
+  /* Typography Declarations */
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 .masthead-heading,
 .masthead-intro {
-    text-align: center;
+  /* Layout Declarations */
+  text-align: center;
 }
 
 .masthead {
-    padding: 4em 0;
-    background-image: url(/assets/background.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-top: solid 1em #ffcf33;
+  padding: 4em 0;
+  background-image: url(/Lesson\ 2/assets/background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: solid 1em #ffcf33;
+}
+
+.masthead-intro {
+  /* Layout Declarations */
+  color: #ffffff;
+  margin-bottom: 0.1em;
+  /* Typography Declarations */
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 2em;
+}
+
+.masthead-heading {
+  /* Layout Declarations */
+  color: #efb623;
+  margin-top: -0.2em;
+  /* Typography Declarations */
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 6em;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.masthead-profile-picture {
+  /* Layout Declarations */
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: 0 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 91px;
+  border: #ffffff solid 4px;
+}
+
+.section-introduction>p,
+.section-location>p,
+.section-more_about_me>p,
+.section-connect>p,
+.content-footer>p {
+  /* Typography Declarations */
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.section-more_about_me>h2 {
+  /* Typography Declarations */
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  /* Layout Declarations*/
+  margin: 2em 0 1em 0;
+}
+
+@media only screen and (max-width: 500px) {
+  .masthead {
+    padding: 3em 0;
   }
-  
-  .masthead-intro {
-    /* Layout Declarations */
-    color: #ffffff;
-    margin-bottom: 0.1em;
-    /* Typography Declarations */
-    font-family: "Gentium Book Basic", Georgia, serif;
-    font-size: 2em;
-  }
-  
+
   .masthead-heading {
-    /* Layout Declarations */
-    color: #efb623;
-    margin-top: -0.2em;
-    /* Typography Declarations */
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: bold;
-    font-size: 6em;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
+    font-size: 3em;
   }
-  
-  .masthead-profile-picture {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    object-position: 0 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 91px;
-    border: #ffffff solid 4px;
-  }
-  
-  @media only screen and (max-width: 500px) {
-    .masthead {
-      padding: 3em 0;
-    }
-    .masthead-heading {
-      font-size: 3em;
-    }
-  }
+}
