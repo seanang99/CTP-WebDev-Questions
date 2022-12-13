@@ -49,17 +49,14 @@
   <div class="connect">
     <section class="section-connect">
       <h1>Let's Connect</h1>
-      <p>Write a message</p>
       <form id="connect-form">
-        <label class="connect-email-label">Email:
-          <input id="email" type="email" class="connect-email" name="message-email" role="textbox"
-            placeholder="sender@email.com">
-        </label>
-        <label class="connect-message-label">Message
+        <label class="connect-message-label"> Write a message
           <textarea id="message" class="connect-textarea" name="message-textarea" role="textbox"
             placeholder="Hi Sean..." rows="4" cols="50"></textarea>
         </label>
-        <input id="submit" class="connect-send-button" type="submit" value="Send" onclick="return sendEmail()" />
+        <input id="submit" class="connect-button" type="submit" value="Send"
+          onclick="return sendEmail(document.getElementById('message').value)"/>
+        <input type="reset" class="connect-button" name="reset" value="Clear" />
       </form>
     </section>
   </div>
@@ -67,10 +64,21 @@
   <footer class="content-footer">
     <p>Say hi to me on these social networks!👋</p>
     <ul class="social">
-      <li><a class="css-is-deranged" href="https://github.com/seanang99">GitHub</a></li>
-      <li><a class="css-is-deranged" href="https://www.instagram.com/seangsk/">Instagram</a></li>
-      <li><a class="css-is-deranged" href="https://www.linkedin.com/in/sean-ang-/">LinkedIn</a></li>
+      <li><a href="https://github.com/seanang99">GitHub</a></li>
+      <li><a href="https://www.instagram.com/seangsk/">Instagram</a></li>
+      <li><a href="https://www.linkedin.com/in/sean-ang-/">LinkedIn</a></li>
     </ul>
   </footer>
 
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script type="text/javascript">
+    /**
+     * Sends email by opening an email client (Chrome -> gmail) for the user to send the email
+     * @params message | string
+     * */
+    function sendEmail(message) {
+      alert(`Sending an email with the message: ${message}`);
+      window.open(`mailto:sean.ang.shi.kai@gmail.com?subject=Hello&body=${message}`)
+    }
+  </script>
 </body>

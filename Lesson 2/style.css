@@ -98,7 +98,6 @@ h2 {
   margin-top: 1em;
 }
 
-.connect-email, 
 .connect-textarea {
   width: 100%;
   margin: 0.25em 0;
@@ -115,17 +114,15 @@ h2 {
   line-height: 1.4em;
 }
 
-.connect-email-label:focus-within,
 .connect-message-label:focus-within {
   font-weight: bold;
 }
 
-.connect-email:focus, 
 .connect-textarea:focus {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
 }
 
-.connect-send-button {
+.connect-button {
   background:rgba(0, 0, 0, 0.70);
   margin: 1em 0;
   padding: 0.5em 1.5em;
