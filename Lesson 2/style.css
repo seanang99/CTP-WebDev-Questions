@@ -21,7 +21,7 @@ h2 {
   font-size: 1.2em;
   font-weight: bold;
 }
-
+.content-footer,
 .masthead-heading,
 .masthead-intro {
   /* Layout Declarations */
@@ -105,14 +105,14 @@ h2 {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.17);
   border-radius: 6px;
   border: none;
+  outline: #9e833e;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
   color: #3e3d3d;
+  padding: 5px 8px;
+  transition: 0.2s ease 0s;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1em;
   line-height: 1.4em;
-  padding: 5px 8px;
-  transition: 0.2s ease 0s;
-  outline: #9e833e;
 }
 
 .connect-email-label:focus-within,
@@ -130,19 +130,43 @@ h2 {
   margin: 1em 0;
   padding: 0.5em 1.5em;
   color: #ffffff;
-  font-weight: 600;
-  font-size: 1.1em;
   justify-content: center;
   border-radius: 0.5em;
   border: none;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.content-footer {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #3c6f89;
+  text-decoration: none;
+  border-bottom: solid 1em #ffcf33;
+}
+
+.social > li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.content-footer > p {
+  color: #f7ede1;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #f1c863;
 }
 
 @media only screen and (max-width: 500px) {
   .masthead {
     padding: 3em 0;
   }
-
   .masthead-heading {
     font-size: 3em;
+  }
+  .content-footer {
+    padding: 2em 2.5em;
   }
 }
