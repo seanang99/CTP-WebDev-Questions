@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css" />
+    <title>About me</title>
+</head>
+
+<body>
+    <header class="masthead">
+        <p class="masthead-intro">Hi I'm</p>
+        <h1 class="masthead-heading">Sean</h1>
+        <img class="masthead-profile-picture" src="./assets/profile_picture.jpg" alt="picture of sean" width="100"
+            height="100" />
+    </header>
+
+    <section class="section-introdution">
+        <h1>Introduction</h1>
+        <p>I am a final year student studying information systems and business administration.</p>
+    </section>
+
+    <section class="section-location">
+        <h1>Where I'm from</h1>
+        <p>I'm a local from Singapore who lives at the south-eastern part of the country...</p>
+    </section>
+
+    <section class="section-more-about-me">
+        <h1>More about me</h1>
+        <h2>What are your favourite hobbies</h2>
+        <p>I enjoy drawing, cooking and watching movies...</p>
+
+        <h2>What's your dream job?</h2>
+        <p>I want to be a software developer</p>
+    </section>
+
+    <div class="connect">
+        <section class="section-connect">
+            <h1>Let's connect</h1>
+            <form id="form-connect">
+                <label class="label-form-message">
+                    Write me a message:
+                    <textarea id="message" class="connect-message" name="message-textarea" role="textbox" placeholder="Hi Sean..." rows="4" cols="50"></textarea>
+                </label>
+                <input id="submit-button" type="submit" class="connect-button" value="Send" onclick="return sendEmail(document.getElementById('message').value)" />
+                <input id="reset-button" type="reset" class="connect-button" value="Clear"/>
+            </form>
+        </section>
+    </div>
+
+    <footer class="content-footer">
+        <p>Say hi to me on these social networks!</p>
+        <ul class="social">
+            <li><a href="https://github.com/seanang99/">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/sean-ang-">LinkedIn</a></li>
+        </ul>
+    </footer>
+
+
+    <script type="text/javascript">
+        function sendEmail(message){
+            window.open(`mailto:sean.ang.shi.kai@gmail.com?subject=Hello&body=${message}`)
+        }
+    </script>
+</body>
+
+</html>
