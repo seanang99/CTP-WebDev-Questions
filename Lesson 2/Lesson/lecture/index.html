@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./style.css" />
+
+    <style>
+        h1 {
+            color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 style="color: red">Header 1</h1>
+    <h1>Hello World</h1>
+    <p>Hi I'm a paragraph</p>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h6>Header 6</h6>
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ol>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <label>
+        Name:
+        <input class="form-input" id="form-input" type="text" onchange="return validateText()" />
+    </label>
+
+    <label name="form-input-checkbox">
+        Yes/No
+        <input name="form-input-checkbox" type="checkbox">
+    </label>
+
+    <label for="form-input-radio">
+        Yes
+        <input name="form-input-radio" type="radio">
+        No
+        <input name="form-input-radio" type="radio">
+    </label>
+
+    <div id="cont1"></div>
+
+    <script>
+        var name = document.getElementById('form-input').value;
+        function validateText() {
+            console.log("hi");
+        }
+    </script>
+
+</body>
+
+</html>

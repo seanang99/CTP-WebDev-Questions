@@ -1,0 +1,23 @@
+h1 {
+    color: green;
+}
+
+h2 {
+    color: green;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.form-input:focus {
+    background-color: aqua;
+}
+
+#cont1 {
+    width: 50%;
+    height: 100px;
+    border-style: solid;
+    border-color: aqua;
+    border-width: 10px;
+    background-color: brown;
+    margin: 20px;
+    padding: 30px;
+}
